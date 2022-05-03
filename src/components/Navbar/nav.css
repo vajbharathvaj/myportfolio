@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+.nav{
+	display: flex;
+	justify-content: space-between;
+	color:white;
+	margin-left: 50px;
+	margin-right: 50px;
+	padding-top: 20px;
+	font-family: Averta, sans-serif;
+	position:relative;
+	align-items: center;
+	text-transform: uppercase;
+	letter-spacing: 1.5px;
+
+	
+	
+
+}
+.bharath::before{
+	height:2px;
+	content: '';
+	
+	transform: scaleX(0);
+	position: absolute;
+	transform-origin: left center;
+	bottom: 0;
+	transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+	
+	opacity: 0;
+	width:150px;
+	background-color:white;
+
+}
+.bharath:hover::before{
+	transform: scaleX(1);
+	opacity: 1;
+}
+.contact::before{
+	height:2px;
+	content: '';
+	
+	transform: scaleX(0);
+	position: absolute;
+	transform-origin: left center;
+	bottom: 0;
+	transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+	
+	opacity: 0;
+	width:88px;
+	background-color:red;
+	
+
+}
+.contact:hover::before{
+	transform: scaleX(1);
+	opacity: 1;
+}
+.hire::before{
+	height:2px;
+	content: '';
+	opacity: 0;
+	
+	transform: scaleX(0);
+	position: absolute;
+	transform-origin: left center;
+	bottom: 0;
+	transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+	
+	
+	width:68px;
+	background-color:red;
+
+}
+.hire:hover::before{
+	transform: scaleX(1);
+	opacity: 1;
+}
+.hire{
+	cursor: pointer;
+	z-index: 3;
+	position: relative;
+	font-family: Averta, sans-serif;
+}
+.contact{
+	position: relative;
+	cursor: pointer;
+	z-index: 2;
+	font-family: Averta, sans-serif;
+}
+.bharath{
+	position:relative;
+	cursor: pointer;
+	z-index: 2;
+	color: red;
+	font-weight: 600;
+	
+	font-size: 19px;
+	letter-spacing: 2.5px;
+
+}
+
+@media only screen and (max-width: 700px) {
+	  .nav {
+	  	display: flex;
+	  	justify-content: space-between ;
+	  	 
+  }
+  .navdes{
+  	display: flex;
+  	justify-content: center;
+  	align-items: center;
+  	width:140px;
+  	height:65px;
+
+  }
+  .bharath{
+  	font-size: 13px;
+  	font-weight: 600;
+  	
+  }
+  .hire{
+  		font-size: 13px;
+  
+  }
+
+
+}
+
+
+

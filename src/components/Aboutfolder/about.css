@@ -1,0 +1,281 @@
+.about{
+	min-height:290vh;
+	overflow-x: hidden;
+	z-index: 1;
+	
+	position: relative
+}
+.circle{
+	position: absolute;
+	left:50%;
+	
+	transform:translateX(-50%);
+	margin-top: 10em;
+	z-index: -1;
+	
+}
+.centersquare{
+	background-color: #1f1f1f;
+	height:200px;
+	width:300px;
+	position: absolute;
+	text-align: center;
+
+
+	left:50%;
+	top:20%;
+	transform:translateX(-50%);
+	
+	font-family: 'Roboto', sans-serif;
+	padding: 40px;
+	
+	
+	font-size:25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 1.5px;
+	color:white;
+	z-index: 2;
+	
+
+}
+.arrowabout{
+	position: absolute;
+	top:23%;
+	left:59%;
+	
+	z-index:8;
+	transform:  rotate(-40deg) scaleY(0);
+	transform-origin: top center;
+	opacity: 0;
+	transition: all 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+}
+.is-revealed .arrowabout{
+	transform: rotate(-2deg) scaleY(1);
+	opacity: 1;
+
+}
+.bharathvaj{
+	height:40px;
+	width:160px;
+	background-color: #FF7F43;
+	text-decoration: none;
+	position: absolute;
+	top:70%;
+	left:50%;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	letter-spacing: 0px;
+	font-size: 19px;
+	justify-content: center;
+	color:white;
+	font-weight:100;
+
+}
+.imagediv {
+	height:400px;
+	width:260px;
+	margin-left: 250px;
+	position: relative;
+	top:10em;
+	z-index: -1;}
+.imagediv img{	
+	
+	object-fit: cover;
+	filter: grayscale(0.9);
+
+	width:100%;
+	height:100%;
+	
+	clip-path: inset(100% 0% 0% 0%);
+	transition: all 1.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+
+}
+.is-revealed .imagediv img {
+	clip-path: inset(0% 0% 0% 0%);
+}
+.imagediv2{
+	height:310px;
+	width:230px;
+	background-color: white;
+	
+	position: relative;
+	top:32em;
+	right:4em;
+	z-index: -1;
+
+
+}
+.imagediv2 img{	
+	filter: grayscale(0.9);
+	
+	object-fit: cover;
+
+	width:100%;
+	height:100%;
+	
+	clip-path: inset(100% 0% 0% 0%);
+	transition: all 1.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+
+}
+.is-revealed .imagediv2 img {
+	clip-path: inset(0% 0% 0% 0%);
+}
+.imagewrapper{
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	z-index: -1;
+	
+	
+
+}
+.smilie{
+	position: absolute;
+	top:7em;
+	right:8em;
+	transform: rotate(-33deg);
+	
+	animation:swing 1.7s ease-in-out alternate-reverse infinite;
+}
+.biosection{
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	z-index: -1;
+		
+	position: absolute;
+	top:60em;
+	left:20em;
+
+}
+.bioimg{
+
+	height:80vh;
+	width:320px;
+	background-color: white;
+}
+.bioimg img{	
+	
+	object-fit: cover;
+
+	width:100%;
+	height:100%;
+	
+	clip-path: inset(100% 0% 0% 0%);
+	transition: all 1.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0s;
+
+}
+.is-revealed .bioimg img {
+	clip-path: inset(0% 0% 0% 0%);
+}
+.biocontent{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	z-index: -1;
+	
+	letter-spacing: 1.5px;
+	padding:20px;
+	position: absolute;
+	color:white;
+	height:200px;
+	width:270px;
+	background-color: #FF5B0D;
+	right:28em;
+	top:12em;
+}
+.biocontent2{
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	z-index: -1;
+	
+	letter-spacing: 1.5px;
+	padding:20px;
+	position: absolute;
+	color:white;
+	height:200px;
+	width:270px;
+	background-color: #FF5B0D;
+	right:9em;
+	top:12em;
+}
+.smiliesvg{
+	transform-origin: 25% 20%;
+	animation:swing 2.4s ease-in-out alternate-reverse infinite;
+	
+}
+.longarrow{
+	position: absolute;
+	z-index: 4;
+	margin-left: 9em;
+	top:40em;
+
+}
+@keyframes swing{
+	0%{
+		transform: rotate(33deg);
+	}
+
+	100%{
+		transform: rotate(-33deg)
+	}
+}
+@media only screen and (max-width: 700px) {
+	.circles{
+		width :400px;
+		height: 500px;
+		margin-top: 7em;
+	}
+	.centersquare{
+		width: 100px;
+		height: 100px;
+		font-size:12px;
+		top: 37em
+	}
+	.imagediv{
+		height:200px;
+		width:150px;
+		left:-11em;
+		top:18em;
+	}
+	.imagediv2{
+		height:200px;
+		width:150px;
+		left:-7em;
+
+	}
+	.longarrow{
+		opacity: 0;
+	}
+	.bioimg{
+		position: relative;
+		height:250px;
+		width:150px;
+		right: 2.9em;
+		top:-10em;
+	}
+	.biocontent{
+		height:100px;
+		font-size: 13px;
+		width:200px;
+		left:-20em;
+		top:-5em;
+	}
+	.biocontent2{
+		height:100px;
+		font-size: 13px;
+		width:200px;
+		left:1em;
+		top:-5em;
+	}
+
+
+}

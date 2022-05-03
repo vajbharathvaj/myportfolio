@@ -1,0 +1,101 @@
+.uiwrapper{
+	
+	height: 110vh;
+	width:100vw;
+	position: relative;
+	display: flex;
+
+	
+	max-width:100%;
+	
+
+
+}
+
+.uiimage{
+	height:500px;
+	width:800px;
+	background-color: #707070;
+	position: relative;
+	left:150px;
+	top:200px;
+	-webkit-box-reflect: below 8px -webkit-gradient(linear, right top, right bottom, from(transparent), 
+		color-stop(40%, transparent), to(rgba(255, 255, 255, 0.1)));
+
+	
+
+}
+.uiimage img{
+	width: 100%;
+	height:100%;
+}
+.imagewrapper{
+	width: 100%;
+	height: 100%;
+	z-index: 4;
+}
+.designsvg{
+	position: absolute;
+	width: 400px;
+	padding: 10px;
+	
+	top: 32em;
+	left:35em;
+	transform: scaleY(0);
+	transition:all 500ms  cubic-bezier(.75,-0.5,0,1.75);
+
+	
+	z-index: 5;
+}
+.is-revealed .designsvg{
+	transform: scaleY(1);
+
+}
+
+.uisvg{
+	position: relative;
+	top:8em;
+	right:5em;
+	z-index: 5;
+	transform: scaleX(0);
+	opacity: 0;
+	transition: all 500ms  cubic-bezier(.75,-0.5,0,1.75);
+
+
+}
+.is-revealed .uisvg{
+	transform: scaleX(1);
+	opacity: 1;
+}
+.low{
+	opacity:0;
+}
+@media only screen and (max-width: 700px) {
+	.imagewrapper , .uiwrapper{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+	}
+	.uiimage{
+		height:200px;
+		width:350px;
+		left:50%;
+		top: 0;
+
+		
+	}
+	.designsvg{
+		opacity: 0;
+	}
+	.low{
+		opacity:1;
+		font-size: 20px;
+		font-weight:600;
+		font-family: Graphik, sans-serif;
+		text-align: center;
+		color:white;
+		position: absolute; 
+		top:8em;
+	}
+}

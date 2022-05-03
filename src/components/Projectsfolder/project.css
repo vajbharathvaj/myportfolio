@@ -1,0 +1,189 @@
+.projectswrapper{
+	width:100%;
+	overflow-x: hidden;
+	min-height:450vh;
+	margin: 0;
+	border: none;
+	margin-bottom: -149%;
+	
+	
+	
+	
+
+	
+
+}
+.projects{
+
+	width:120vw;
+	height:280vh;
+	border-top-right-radius: 50%;
+	border-top-left-radius:50%; 
+
+
+	
+	
+	position: absolute;
+	left:50%;
+	transform: translateX(-50%) ;
+
+
+}
+
+.card{position: absolute;
+	height:350px;
+	width:250px;
+	background-color:white;
+	left:43%;
+	border-radius:5%;
+	top:-6%;
+	transform: translate3d(0px, 41.92%, 0px);
+	z-index: 4;
+	justify-content: center;
+	display: flex;
+	align-items: center;
+
+	
+
+
+
+}
+.card img{
+	height: 90%;
+	width:90%;
+
+}
+.cards{
+	position: relative;
+	background-color: red;
+	z-index: 6;
+}
+
+.first{
+	
+	transform:rotate(2deg);
+	transform-origin: right bottom;
+	z-index: 5;
+	
+	left:47%;
+	transition:all 0.3s cubic-bezier(.16,.76,.96,.42)
+
+
+
+
+}
+.second{
+	z-index: 5;
+	
+	transform:rotate(-10deg);
+	transform-origin: left bottom;
+	
+	left:37%;
+	transition:all 0.3s cubic-bezier(.16,.76,.96,.42)
+
+}
+
+.cards:hover .first{
+
+	
+	transform:rotate(8deg) !important;
+	transform-origin: right bottom;
+	
+	
+
+}
+
+.cards:hover .second{
+	
+	transform:rotate(-16deg) ;
+	transform-origin: left bottom;
+	
+
+}
+.contentwrapper{
+	display: flex;
+
+	flex-direction: column ;
+	position: absolute;
+	left:50%;
+	top:15%;
+	transform:translateX(-50%);
+}
+.title{
+	font-family:  "Bai Jamjuree", sans-serif;
+	font-size: 60px;
+	font-weight:800;
+	letter-spacing: 1px;
+
+}
+.subtitle{
+		font-family:  "Bai Jamjuree", sans-serif;
+	font-size: 20px;
+	font-weight:300;
+	letter-spacing: 1px;
+	margin-top: 100px;
+
+}
+.overlay{
+	height:140vh;
+	width:100%;
+	background-color:#161414;
+	position: absolute;
+	bottom: -65em;
+}
+.project{
+	height:510vh;
+	overflow-y:  hidden;
+	overflow-x: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+}
+.contentstart{
+
+	width:100%;
+	height:10px;
+	position: absolute;
+	bottom: -65em;
+	
+	background-color: red;
+
+}
+.projectt{
+	position: relative;
+	margin-top:-30em;
+	z-index: 4;
+	overflow-x:hidden;
+	width:100vw; 
+}
+@media  (max-width: 600px) {
+	.projects{
+		width:900px;
+		height:1500px;
+
+	}
+	.card{
+		height:299px;
+		width:200px;
+		position: absolute;
+		left:23em;
+		z-index: 11;
+	}
+	.projectswrapper{
+			margin-bottom: -360%;
+			min-height:450vh;
+
+	}
+	.title{
+		font-size: 50px;
+		text-transform: uppercase;
+
+	}
+	.subtitle{
+		font-size: 15px;
+	}
+}
+
+

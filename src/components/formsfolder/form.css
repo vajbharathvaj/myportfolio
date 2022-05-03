@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
+
+.formwrapper{
+	        font-family: 'Noto Serif', serif;
+	        display: flex;
+	        flex-direction: column;
+	        justify-content: center;
+	        align-items: center;
+	        height: 100vh;
+	    }
+.formtitle{
+	font-size: 16vh;
+	font-weight: 700;
+	margin-bottom:20px;
+	text-transform: uppercase; 
+
+	    }
+.email{
+	border: 2px solid black;
+	padding: 17px;
+	text-align: center;
+	font-size: 40px;
+	font-weight: 500;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	text-decoration: none;
+	color: black;
+	resize: none;
+	width:14em;
+	height: 1.3em;
+	    }
+.email:hover .copied{
+	opacity: 1;
+}
+
+
+.message{
+	margin-top:80px;
+	font-size:40px;
+	font-weight:500;
+	text-transform: uppercase;
+	width:700px;
+	text-align: center;
+
+	    }
+.copied{
+	    	height: 80px;
+	    	width: 80px;
+	    	border-radius:50%;
+	    	background-color: black;
+	    	color: white;
+	    	position: absolute;
+	    	display: flex;
+	    	justify-content: center;
+	    	align-items: center;
+	    	top:275px;
+	    	left:62em;
+	    	font-weight: 600;
+	    	opacity: 1;
+	    	transition:all 0.2s cubic-bezier(.16,.76,.96,.42);
+	    	cursor: pointer;
+	    	text-transform: uppercase;
+	    	
+	    }
+::selection{
+	color: black;
+	background-color: transparent;
+} 

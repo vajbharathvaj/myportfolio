@@ -6,13 +6,19 @@
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.0.1",
     "@testing-library/user-event": "^13.5.0",
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0",
+    "classnames": "^2.3.1",
+    "firebase": "^9.6.11",
+    "gsap": "^3.9.1",
+    "locomotive-scroll": "^4.1.4",
+    "react": "^17.0.0",
+    "react-dom": "^17.0.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.1",
+    "scrolltrigger": "^1.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "set PORT=3002 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
